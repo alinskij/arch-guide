@@ -14,3 +14,15 @@ The arch-guide repository is aimed at helping new Arch Linux users get better ac
 - [Advanced system customization](#advanced-system-customization)
 - [Appearance сustomization](#appearance-customization)
 - [Useful links and resources](#useful-links-and-resources)
+
+## Installation
+This section describes how to install Arch Linux in two ways - manually using a guide and using an automated installation script.
+### Installation guide
+### Installation script
+
+## After installation
+### Basic system configuration
+
+## Advanced system customization
+## Appearance сustomization
+## Useful links and resources

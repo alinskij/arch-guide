@@ -2,7 +2,7 @@
   <img src="https://img.shields.io/github/last-commit/alinskij/hgs?style=for-the-badge" />
   <img src="https://img.shields.io/github/license/alinskij/hgs?style=for-the-badge" />
   <img src="https://img.shields.io/github/stars/alinskij/hgs?style=for-the-badge" />
-  <img src="https://img.shields.io/youtube/channel/subscribers/UCo71RUe6DX4w-Vd47rFLXPg?style=for-the-badge&link=https%3A%2F%2Fyoutube.com%2F%40typecraft_dev" />
+  <object src="https://img.shields.io/youtube/channel/subscribers/UCo71RUe6DX4w-Vd47rFLXPg?style=for-the-badge&link=https%3A%2F%2Fyoutube.com%2F%40typecraft_dev" />
 </p>
 
 <p align="center">

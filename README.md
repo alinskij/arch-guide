@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://archlinux.org" target="blank">
-    <img src="archlinux-logo.png" alt="Arch Linux Logo"/>
+  <a href="https://archlinux.org">
+    <img src="archlinux-logo.png"/>
   </a>
 </p>
 

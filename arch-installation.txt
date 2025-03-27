@@ -1,0 +1,38 @@
+1. Disk preparation
+cfdisk /dev/nvme0n1 (or your device)
+mkfs.ext4 /dev/nvme0n1p2 (root partition)
+mkfs.fat -F 32 /dev/nvme0n1p1 (EFI partition)
+mount /dev/nvme0n1p2 /mnt
+mount --mkdir /dev/nvme0n1p1 /mnt/boot/efi
+
+2. System installation
+pacstrap -K /mnt base linux linux-firmware sof-firmware sudo grub efibootmgr amd-ucode vim networkmanager
+
+3. Generating fstab
+genfstab -U /mnt > /mnt/etc/fstab
+vim /mnt/etc/fstab
+
+4. System configuration
+arch-chroot /mnt
+ln -sf /usr/share/zoneinfo/Europe/Instanbul /etc/localtime
+hwclock --systohc
+vim /etc/locale.gen
+locale-gen
+echo 'LANG=en_US.UTF-8' > /etc/locale.conf
+echo archie > /etc/hostname
+passwd
+useradd -m -G wheel -s /bin/bash user
+passwd user
+EDITOR=vim visudo
+grub-install
+grub-mkconfig -o /boot/grub/grub.cfg
+systemctl enable NetworkManager
+
+5. Reboot
+exit
+umount -R /mnt
+reboot
+
+6. DE Installation
+sudo pacman -S gnome
+sudo systemctl enable --now gdm
